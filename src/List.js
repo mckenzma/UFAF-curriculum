@@ -163,7 +163,7 @@ export default function InteractiveList() {
                 <List dense={dense}>
                   {generate(
                     <ListItem>
-                      <Button>
+                      <Button onClick={handleClickOpen}>
                         <ListItemText
                           primary="Technique"
                           secondary={secondary ? "Secondary text" : null}
@@ -176,27 +176,13 @@ export default function InteractiveList() {
                         aria-describedby="alert-dialog-description"
                       >
                         <DialogTitle id="alert-dialog-title">
-                          {"Use Google's location service?"}
+                          {"Technique"}
                         </DialogTitle>
                         <DialogContent>
                           <DialogContentText id="alert-dialog-description">
-                            Let Google help apps determine location. This means
-                            sending anonymous location data to Google, even when
-                            no apps are running.
+                            Enter description about technique here
                           </DialogContentText>
                         </DialogContent>
-                        {/* <DialogActions>
-                          <Button onClick={handleClose} color="primary">
-                            Disagree
-                          </Button>
-                          <Button
-                            onClick={handleClose}
-                            color="primary"
-                            autoFocus
-                          >
-                            Agree
-                          </Button>
-                        </DialogActions> */}
                       </Dialog>
                     </ListItem>
                   )}
